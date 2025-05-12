@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Start Lead Generation</title>
+    <title>AI Lead Generator Setup</title>
+    <meta charset="UTF-8" />
   </head>
   <body>
-    <h2>Lead Generator Setup</h2>
-    <form action="https://YOUR_WEBHOOK_URL_HERE" method="POST">
+    <h2>Enter Your Business Info</h2>
+    <form action="https://your-n8n-webhook-url.com/" method="POST">
       <label>Business Name:</label><br />
       <input type="text" name="business_name" required /><br /><br />
 
       <label>Industry:</label><br />
       <input type="text" name="industry" required /><br /><br />
 
-      <label>What You Offer:</label><br />
-      <input type="text" name="what_you_offer" required /><br /><br />
+      <label>What Do You Offer:</label><br />
+      <textarea name="what_you_offer" required></textarea><br /><br />
 
       <label>Target Customer:</label><br />
       <input type="text" name="target_customer" required /><br /><br />
@@ -24,7 +25,7 @@
       <label>Search Keywords (optional):</label><br />
       <input type="text" name="keywords" /><br /><br />
 
-      <input type="submit" value="Start Generating Leads" />
+      <button type="submit">Start Generating Leads</button>
     </form>
   </body>
 </html>
